@@ -1,0 +1,2 @@
+echo "serviceAccount.json" >> .gitignore
+echo "serviceAccountKey_save.json" >> .gitignore
