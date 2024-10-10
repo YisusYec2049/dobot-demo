@@ -1,10 +1,8 @@
-import firebase_admin
 from firebase_admin import credentials, initialize_app, db
 import time
 import threading
 import DobotDllType as dType
 import json
-from firebase import firebase
 import requests
 
 CON_STR = {
@@ -80,7 +78,7 @@ def send_data_to_dobot(data):
         coords = [int(val) for val in coords_str]
         print("Datos convertidos a enteros:", coords)
         # Enviar los datos al Dobot
-        move(coords)
+        ##move(coords)
         print("Datos enviados al Dobot:", coords)
     except ValueError as e:
         print(f"Error al convertir datos a enteros: {e}")
